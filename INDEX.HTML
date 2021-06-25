@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+  <h1 >page title</h1> 
+
+  <!--<script>
+    alert('hello,world');   
+   </script> -->
+<script src="sandbox.js"></script>
+<script>
+    document.write(5 + 6);
+    </script>
+    
+
+notes about console
+console in JavaScript
+Difficulty Level : Basic
+Last Updated : 22 Jun, 2020
+Web console
+
+A Web console is a tool which is mainly used to log information associated with a web page like: network requests, javascript, security errors, warnings, CSS etc. It enables us to interact with a web page by executing javascript expression in the contents of the page.
+
+Console object
+
+In javascript, the console is an object which provides access to the browser debugging console. We can open a console in web browser by using: Ctrl + Shift + K for windows and Command + Option + K for Mac. The console object provides us with several different methods, like :
+
+log()
+error()
+warn()
+clear()
+time() and timeEnd()
+table()
+count()
+group() and groupEnd()
+custom console logs
+Let’s look at all these methods one by one.
+
+
+
+
+console.log()
+
+Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.
+
+// console.log() method
+console.log('abc'); 
+console.log(1);
+console.log(true);
+console.log(null);
+console.log(undefined); 
+console.log([1, 2, 3, 4]); // array inside log
+console.log({a:1, b:2, c:3}); // object inside log
+Output:
+
+
+console.error()
+
+Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.
+
+// console.error() method 
+console.error('This is a simple error'); 
+Output:
+
+
+console.warn()
+
+Used to log warning message to the console. By default the warning message will be highlighted with yellow color.
+
+
+
+
+// console.warn() method 
+console.warn('This is a warning.'); 
+Output:
+
+
+console.clear()
+
+Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned.
+
+// console.clear() method 
+console.clear(); 
+Output:
+
+
+console.time() and console.timeEnd()
+
+Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console).
+
+// console.time() and console.timeEnd() method 
+console.time('abc');
+ let fun =  function(){
+     console.log('fun is running');
+ }
+ let fun2 = function(){
+     console.log('fun2 is running..');
+ }
+ fun(); // calling fun();
+ fun2(); // calling fun2();
+console.timeEnd('abc');
+In the above code sample, we can see that the label is ‘abc’ which is same for both the time() and th
+</body>
+</html>
